@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#" prefix="og: http://ogp.me/ns#">
+<head>
+
+
+<title>JSE1: Module 1 Test Answers (JavaScript Essentials 1)</title>
+
+
+
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://programminganswers.net/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all" />
+<style id="rank-math-toc-block-style-inline-css" type="text/css">
+.wp-block-rank-math-toc-block nav ol{counter-reset:item}.wp-block-rank-math-toc-block nav ol li{display:block}.wp-block-rank-math-toc-block nav ol li:before{content:counters(item, ".") ". ";counter-increment:item}
+
+</style>
+<style id="elasticpress-related-posts-style-inline-css" type="text/css">
+.editor-styles-wrapper .wp-block-elasticpress-related-posts ul,.wp-block-elasticpress-related-posts ul{list-style-type:none;padding:0}.editor-styles-wrapper .wp-block-elasticpress-related-posts ul li a>div{display:inline}
+
+</style>
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="dwqa-font-awesome-css" href="https://programminganswers.net/wp-content/plugins/dw-question-answer-pro/templates/assets/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" id="dwqa-style-css" href="https://programminganswers.net/wp-content/plugins/dw-question-answer-pro/templates/assets/css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" id="dwqa-style-rtl-css" href="https://programminganswers.net/wp-content/plugins/dw-question-answer-pro/templates/assets/css/rtl.css" type="text/css" media="all" />
+<link rel="stylesheet" id="quiz-maker-css" href="https://programminganswers.net/wp-content/plugins/quiz-maker/public/css/quiz-maker-public.css" type="text/css" media="all" />
+<link rel="stylesheet" id="taqyeem-buttons-style-css" href="https://programminganswers.net/wp-content/plugins/taqyeem-buttons/assets/style.css" type="text/css" media="all" />
+<link rel="stylesheet" id="taqyeem-style-css" href="https://programminganswers.net/wp-content/plugins/taqyeem/style.css" type="text/css" media="all" />
+<link rel="stylesheet" id="tie-style-css" href="https://programminganswers.net/wp-content/themes/sahifa/style.css" type="text/css" media="all" />
+<link rel="stylesheet" id="tie-ilightbox-skin-css" href="https://programminganswers.net/wp-content/themes/sahifa/css/ilightbox/dark-skin/skin.css" type="text/css" media="all" />
+<link rel="stylesheet" id="elasticpress-facets-css" href="https://programminganswers.net/wp-content/plugins/elasticpress/dist/css/facets-styles.css" type="text/css" media="all" />
+<link rel="stylesheet" id="dwqa_leaderboard-css" href="https://programminganswers.net/wp-content/plugins/dw-question-answer-pro/templates/assets/css/leaderboard.css" type="text/css" media="all" />
+<link rel="stylesheet" id="enlighterjs-css" href="https://programminganswers.net/wp-content/plugins/enlighter/cache/enlighterjs.min.css" type="text/css" media="all" />
+<link rel="stylesheet" id="dwqa-choose-style-css" href="https://programminganswers.net/wp-content/plugins/dw-question-answer-pro/templates/styles/helpdesk/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="https://programminganswers.net/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js" id="monsterinsights-frontend-script-js"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="monsterinsights-frontend-script-js-extra">/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/programminganswers.net","hash_tracking":"false","v4_id":"G-MQV9FY6JHH"};/* ]]> */
+</script>
+<script type="text/javascript" src="https://programminganswers.net/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://programminganswers.net/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="google-recaptcha-js-extra">
+/* <![CDATA[ */
+var dwqa_gcv2 = {"public_key":""};
+/* ]]> */
+</script>
+
+
+<style type="text/css" media="screen">
+
+</style>
+
+<!--[if IE]>
+<script type="text/javascript">jQuery(document).ready(function (){ jQuery(".menu-item").has("ul").children("a").attr("aria-haspopup", "true");});</script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="https://programminganswers.net/wp-content/themes/sahifa/js/html5.js"></script>
+<script src="https://programminganswers.net/wp-content/themes/sahifa/js/selectivizr-min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" media="all" href="https://programminganswers.net/wp-content/themes/sahifa/css/ie9.css" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="https://programminganswers.net/wp-content/themes/sahifa/css/ie8.css" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="https://programminganswers.net/wp-content/themes/sahifa/css/ie7.css" />
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style type="text/css" media="screen">
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo h1 a, .logo h2 a{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo span{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-nav, .top-nav ul li a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-nav, #main-nav ul li a{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.breaking-news span.breaking-news-title{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-title{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-title{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2.post-box-title, h2.post-box-title a{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h3.post-box-title, h3.post-box-title a{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p.post-meta, p.post-meta a{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body.single .entry, body.page .entry{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size : 15px;
+}
+
+blockquote p{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.widget-top h4, .widget-top h4 a{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-widget-top h4, .footer-widget-top h4 a{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#featured-posts .featured-title h2 a{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.ei-title h2, .slider-caption h2 a, .content .slider-caption h2 a, .slider-caption h2, .content .slider-caption h2, .content .ei-title h2{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.cat-box-title h2, .cat-box-title h2 a, .block-head h3, #respond h3, #comments-title, h2.review-box-header, .woocommerce-tabs .entry-content h2, .woocommerce .related.products h2, .entry .woocommerce h2, .woocommerce-billing-fields h3, .woocommerce-shipping-fields h3, #order_review_heading, #bbpress-forums fieldset.bbp-form legend, #buddypress .item-body h4, #buddypress #item-body h4{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-nav,
+.cat-box-content,
+#sidebar .widget-container,
+.post-listing,
+#commentform {
+	border-bottom-color: #5fa624;
+}
+
+.search-block .search-button,
+#topcontrol,
+#main-nav ul li.current-menu-item a,
+#main-nav ul li.current-menu-item a:hover,
+#main-nav ul li.current_page_parent a,
+#main-nav ul li.current_page_parent a:hover,
+#main-nav ul li.current-menu-parent a,
+#main-nav ul li.current-menu-parent a:hover,
+#main-nav ul li.current-page-ancestor a,
+#main-nav ul li.current-page-ancestor a:hover,
+.pagination span.current,
+.share-post span.share-text,
+.flex-control-paging li a.flex-active,
+.ei-slider-thumbs li.ei-slider-element,
+.review-percentage .review-item span span,
+.review-final-score,
+.button,
+a.button,
+a.more-link,
+#main-content input[type="submit"],
+.form-submit #submit,
+#login-form .login-button,
+.widget-feedburner .feedburner-subscribe,
+input[type="submit"],
+#buddypress button,
+#buddypress a.button,
+#buddypress input[type=submit],
+#buddypress input[type=reset],
+#buddypress ul.button-nav li a,
+#buddypress div.generic-button a,
+#buddypress .comment-reply-link,
+#buddypress div.item-list-tabs ul li a span,
+#buddypress div.item-list-tabs ul li.selected a,
+#buddypress div.item-list-tabs ul li.current a,
+#buddypress #members-directory-form div.item-list-tabs ul li.selected span,
+#members-list-options a.selected,
+#groups-list-options a.selected,
+body.dark-skin #buddypress div.item-list-tabs ul li a span,
+body.dark-skin #buddypress div.item-list-tabs ul li.selected a,
+body.dark-skin #buddypress div.item-list-tabs ul li.current a,
+body.dark-skin #members-list-options a.selected,
+body.dark-skin #groups-list-options a.selected,
+.search-block-large .search-button,
+#featured-posts .flex-next:hover,
+#featured-posts .flex-prev:hover,
+a.tie-cart span.shooping-count,
+.woocommerce span.onsale,
+.woocommerce-page span.onsale ,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle,
+#check-also-close,
+a.post-slideshow-next,
+a.post-slideshow-prev,
+.widget_price_filter .ui-slider .ui-slider-handle,
+.quantity .minus:hover,
+.quantity .plus:hover,
+.mejs-container .mejs-controls .mejs-time-rail .mejs-time-current,
+#reading-position-indicator  {
+	background-color:#5fa624;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color:#5fa624 !important;
+}
+
+#theme-footer,
+#theme-header,
+.top-nav ul li.current-menu-item:before,
+#main-nav .menu-sub-content ,
+#main-nav ul ul,
+#check-also-box {
+	border-top-color: #5fa624;
+}
+
+.search-block:after {
+	border-right-color:#5fa624;
+}
+
+body.rtl .search-block:after {
+	border-left-color:#5fa624;
+}
+
+#main-nav ul > li.menu-item-has-children:hover > a:after,
+#main-nav ul > li.mega-menu:hover > a:after {
+	border-color:transparent transparent #5fa624;
+}
+
+.widget.timeline-posts li a:hover,
+.widget.timeline-posts li a:hover span.tie-date {
+	color: #5fa624;
+}
+
+.widget.timeline-posts li a:hover span.tie-date:before {
+	background: #5fa624;
+	border-color: #5fa624;
+}
+
+#order_review,
+#order_review_heading {
+	border-color: #5fa624;
+}
+
+
+.correct_answer {
+    color: #00A300;
+    font-weight: bold;
+}
+.box div.box-inner-block {min-height: 5px;
+    padding-left: 0;}
+.box .tie-shortcode-boxicon {
+    display: none;}
+.enlighter-default {    padding: 8px 0;
+    border-radius: 0.3em;
+margin: 7px 0;}
+code, pre {
+    font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+    font-size: 16px;
+    display: inline;
+    color: #000;
+    background-color: #6217c5 !important;
+    background: none;
+    border-color: #dfdfdf;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px 4px 1px 4px;
+}
+.entry p {
+    margin-bottom: 10px;
+}
+.entry ol, .entry ul {
+    margin: 10px 0 20px 24px;
+}
+.box {
+    padding: 15px 12px 10px 12px;}
+.enlighter-default {
+    font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+    font-size: 13px !important;}
+.entry li {
+    margin: 0 0 9px 0;
+}
+.dwqa-question-footer, .dwqa-comments, .dwqa-answers, .dwqa-questions-list .dwqa-question-item .dwqa-question-meta, .dwqa-question-filter, .dwqa-questions-footer {display: none;}
+.single-dwqa-question .dwqa-question-item {
+    padding-left: 0;
+}
+.single-dwqa-question .dwqa-question-content, .single-dwqa-question .dwqa-answer-content {
+    border: none;
+    padding: 0;
+}
+.post-listing {margin-bottom: 25px;}
+.dwqa-questions-list .dwqa-question-item {
+    padding: 18px 0 18px 0;
+}
+.dwqa-question-item .dwqa-question-title a {
+    font-size: 1rem;}</style>
+<script type="text/javascript">
+			/* <![CDATA[ */
+				var sf_position = '0';
+				var sf_templates = "<a href=\"{search_url_escaped}\">View All Results<\/a>";
+				var sf_input = '.search-live';
+				jQuery(document).ready(function(){
+					jQuery(sf_input).ajaxyLiveSearch({"expand":false,"searchUrl":"https:\/\/programminganswers.net\/?s=%s","text":"Search","delay":500,"iwidth":180,"width":315,"ajaxUrl":"https:\/\/programminganswers.net\/wp-admin\/admin-ajax.php","rtl":0});
+					jQuery(".live-search_ajaxy-selective-input").keyup(function() {
+						var width = jQuery(this).val().length * 8;
+						if(width < 50) {
+							width = 50;
+						}
+						jQuery(this).width(width);
+					});
+					jQuery(".live-search_ajaxy-selective-search").click(function() {
+						jQuery(this).find(".live-search_ajaxy-selective-input").focus();
+					});
+					jQuery(".live-search_ajaxy-selective-close").click(function() {
+						jQuery(this).parent().remove();
+					});
+				});
+			
+		</script>
+        <style>
+            a {
+              text-decoration: none;
+              display: inline-block;
+              padding: 8px 16px;
+            }
+            
+            a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            
+            .previous {
+              background-color: #f1f1f1;
+              color: black;
+            }
+            
+            .next {
+              background-color: #04AA6D;
+              color: white;
+            }
+            
+            .round {
+              border-radius: 50%;
+            }
+            .center {
+  text-align: center;
+  color: red;}
+
+  .button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 3px 1.5px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+            </style>
+</head>
+<body id="top" class="post-template-default single single-post postid-120 single-format-standard lazy-enabled">
+
+
+
+
+</ul></div>
+
+<form method="get" id="searchform-header" action="aditya.com">
+
+
+
+</div>
+
+
+<div class="logo" style=" margin-top:0x; margin-bottom:0px;">
+
+</h2> </div>
+<div class="clear"></div>
+</div>
+
+
+
+
+</nav>
+</header>
+
+
+
+<article class="post-listing post-120 post type-post status-publish format-standard  category-javascript-essentials-1" id="the-post">
+<div class="post-inner">
+
+    <a href="index.html" class="button">HOME</a> &nbsp; &nbsp; <a href="jse5.html" class="button">JSE-5</a>
+<div class="clear"></div>
+<div class="entry">
+    <h3>JavaScript Essentials 1 &#8211; JSE1: Module 4 Test Answers</h3>
+    <p><strong>1. Which sequence of <code>if ... else</code> statements is <u>incorrect</u>?</strong></p>
+    <ul>
+    <li><code>if ... else if ...</code></li>
+    <li><code class="correct_answer">if ... else ... else if ...</code></li>
+    <li><code>if ... else ...</code></li>
+    <li><code>if ... else if ... else if...</code></li>
+    </ul>
+    <p><strong>2. Which of the following is not a loop instruction in JavaScript?</strong></p>
+    <ul>
+    <li><code>for ... of</code></li>
+    <li><code>for ... in</code></li>
+    <li><code class="correct_answer">if ... else</code></li>
+    <li><code>do ... while</code></li>
+    </ul>
+    <p><strong>3. The condition <code>if (!a)</code> can be replaced by the condition:</strong></p>
+    <ul>
+    <li><code class="correct_answer">if (a == false);</code></li>
+    <li><code>if (a === false);</code></li>
+    <li><code>if (!!a);</code></li>
+    <li><code>if (a);</code></li>
+    </ul>
+    <p><strong>4. Review the following code:</strong></p>
+    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let x = 100;
+    if (x < 100)
+        x = 20;
+    console.log(x)</pre>
+    <p><strong>What will be displayed in the console as a result of its execution?</strong></p>
+    <ul>
+    <li><code>20</code></li>
+    <li>nothing</li>
+    <li><code class="correct_answer">100</code></li>
+    <li><code>false</code></li>
+    </ul>
+    <p><strong>5. Review the following code snippet:</strong></p>
+    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">if (counter <= 10 &#038;&#038; confirm === false) {
+        console.log("test");
+    }</pre>
+    <p><strong>What values can the <code>counter</code> and <code>confirm</code> variables have so that the console displays <code>"test"</code> as a result of code execution?</strong></p>
+    <ul>
+    <li>counter: <code>10</code>, show: <code>true</code></li>
+    <li>counter: <code>11</code>, show: <code>false</code></li>
+    <li class="correct_answer">counter: <code class="correct_answer">10</code>, show: <code class="correct_answer">false</code></li>
+    <li>counter: <code>9</code>, show: <code>true</code></li>
+    </ul>
+    <p><strong>6. The condition <code>if( a >= 0 )</code> can be replaced by the condition:</strong></p>
+    <ul>
+    <li><code class="correct_answer">if (a > 0 || a == 0);</code></li>
+    <li><code>if (!(a > 0 && a == 0));</code></li>
+    <li><code>if (a > 0 && a == 0);</code></li>
+    <li><code>if (0 < a);</code></li>
+    </ul>
+    <p><strong>7. Which of the following loop instructions is intended only to loop through all the keys of the indicated object?</strong></p>
+    <ul>
+    <li><code class="correct_answer">for ... in</code></li>
+    <li><code>do ... while</code></li>
+    <li><code>for ... of</code></li>
+    <li><code>if ... else</code></li>
+    </ul>
+    <p><strong>8. Analyze the code below:</strong></p>
+    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">if (counter === 10) {
+        console.log("abc");
+    }</pre>
+    <p><strong>How can we write the same condition using the <code>switch</code> statement?</strong></p>
+    <ul>
+    <li><code class="correct_answer">switch(counter) {case 10: console.log("abc")};</code></li>
+    <li><code>switch(counter) case 10: console.log("abc");</code></li>
+    <li><code>case(counter) {switch 10: console.log("abc")};</code></li>
+    <li><code>switch(counter) {case ? 10 : console.log("abc")};</code></li>
+    </ul>
+    <p><strong>9. We want to rewrite the following code snippet using the conditional operator:</strong></p>
+    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let name;
+    if (test) {
+        name = 10;
+    } else {
+        name = 20;
+    }</pre>
+    <p><strong>Which notation is correct?</strong></p>
+    <ul>
+    <li><code>let name = (test)("Alice")("Bob");</code></li>
+    <li><code>let name = if test ? "Alice" : "Bob";</code></li>
+    <li><code class="correct_answer">let name = test ? "Alice" : "Bob";</code></li>
+    <li><code>let name = test : "Alice" ? "Bob";</code></li>
+    </ul>
+    <p><strong>10. We store an array of animal names in the <code>animals</code> variable (e.g. <code>let animals = ["dog", "cat", "hamster", "rabbit"];</code>). Which of the following statements will display exactly two names from the array?</strong></p>
+    <ul>
+    <li><code>for (let n in animals) console.log(n);</code></li>
+    <li><code>for (let i =3 ; i < animals.length; i++) console.log(animals[i]);</code></li>
+    <li><code class="correct_answer">for (let i = 0; i < animals.length; i+=2) console.log(animals[i]);</code></li>
+    <li><code>for (let n of animals) console.log(n);</code></li>
+    </ul>
+    <p><strong>11. Which of the following operators is a ternary one?</strong></p>
+    <ul>
+    <li>An <b>increment</b> operator <code>++</code>.</li>
+    <li class="correct_answer">A conditional operator <code>? :</code>.</li>
+    <li>A <b>typeof</b> operator.</li>
+    <li>An <b>assignment</b> operator <code>=</code>.</li>
+    </ul>
+    <p><strong>12. Review the following code:</strong></p>
+    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">if (counter <= 10) {
+        if (counter >= 10) {
+            console.log(1);
+        }
+    }</pre>
+    <p><strong>We can replace it using:</strong></p>
+    <ul>
+    <li><code class="correct_answer">if (counter == 10) console.log(1);</code></li>
+    <li><code>if (false) console.log(1);</code></li>
+    <li><code>if (counter >= 10) console.log(1);</code></li>
+    <li><code>if (true) console.log(1);</code></li>
+    </ul>
+    <p><strong>13. Examine the following code:</strong></p>
+    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">for (let a = 4; a < 4; a++) {
+        console.log("test");
+    }</pre>
+    <p><strong>How many times will <code>"test"</code> be displayed in the console as a result of its execution?</strong></p>
+    <ul>
+    <li>4</li>
+    <li>1</li>
+    <li class="correct_answer">It will not be displayed at all.</li>
+    <li>3</li>
+    </ul>
+    <p><strong>14. Examine the following code:</strong></p>
+    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let car = {make: "Citroen", model: "DS"};
+    for (let f in car) console.log(f);</pre>
+    <p><strong>What will appear on the console as a result?</strong></p>
+    <ul>
+    <li><code class="correct_answer">"make""model"</code></li>
+    <li><code>"car"</code></li>
+    <li><code>"make: Citroen" "model: DS"</code></li>
+    <li><code>"Citroen" "DS"</code></li>
+    </ul>
+    <p><strong>15. Analyze the following code:</strong></p>
+    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let a = 10;
+    do {
+        console.log(a--);
+    } while (a > 3);</pre>
+    <p><strong>Which statement can replace the <code>do ... while</code> from the example above?</strong></p>
+    <ul>
+    <li><code>while (a > 2) console.log(--a);</code></li>
+    <li><code>while (a > 4) console.log(--a);</code></li>
+    <li><code class="correct_answer">while (a > 3) console.log(a--);</code></li>
+    <li><code>while (a >= 3) console.log(a--);</code></li>
+    </ul>
+    <p><strong>16. Analyze the following code:</strong></p>
+    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">for (let x = 10; x > 1; x -= 2) console.log("hello");</pre>
+    <p><strong>How many times will <code>"hello"</code> be displayed in the console as a result of its execution?</strong></p>
+    <ul>
+    <li>4</li>
+    <li>9</li>
+    <li class="correct_answer">5</li>
+    <li>10</li>
+    </ul>
+    <p><strong>17. The <code>switch</code> statement:</strong></p>
+    <ul>
+    <li>allows you to change the program mode to debug mode.</li>
+    <li class="correct_answer">is a conditional statement that allows different actions to be taken depending on the value stored in the indicated variable.</li>
+    <li>is a conditional statement that works identically to the <code>if</code> statement.</li>
+    <li>is not present in the JavaScript language.</li>
+    </ul>
+    <p><strong>18. If we want to display all the elements of the <code>days</code> array in reverse order (starting from the last element) then we can do this using the statement:</strong></p>
+    <ul>
+    <li><code>for(let i = days.length; i > 0; i--) console.log(days[i]);</code></li>
+    <li><code class="correct_answer">for(let i = days.length - 1; i >= 0; i--) console.log(days[i]);</code></li>
+    <li><code>for(let i = days.length - 1; i > 0; i--) console.log(days[i]);</code></li>
+    <li><code>for(let i = days.length; i > 0; i--) console.log(i);</code></li>
+    </ul>
+    <p><strong>19. Examine the following code:</strong></p>
+    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let steps = [3, 2, 1];
+    for (let n of steps) console.log(n);</pre>
+    <p><strong>What will appear on the console as a result?</strong></p>
+    <ul>
+    <li><code>1 2 3</code></li>
+    <li><code>"[3, 2, 1]"</code></li>
+    <li><code>0 1 2</code></li>
+    <li><code class="correct_answer">3 2 1</code></li>
+    </ul>
+    <p><strong>20. Examine the following code:</strong></p>
+    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">for (let a = 5; a > 1; a--) {
+        console.log(a);
+    }
+    ;</pre>
+    <p><strong>Which statement can replace the <code>for</code> from the example above?</strong></p>
+    <ul>
+    <li><code>let a = 1; while (a < 5) console.log(a++);</code></li>
+    <li><code>let a = 5; while (a > 1) console.log(a++);</code></li>
+    <li><code>let a = 6; while (a >= 1) console.log(a--);</code></li>
+    <li><code class="correct_answer">let a = 5; while (a > 1) console.log(a--);</code></li>
+    </ul>
+    </div>
+<a href="jse3.html" class="next">&laquo; Prev</a> &nbsp; <a href="jse5.html" class="next">Next &raquo;</a>
+
+<h1 class="center">Created By Aditya</h1>
+
+</body>
+</html>
