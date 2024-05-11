@@ -442,163 +442,145 @@ code {
     <a href="index.html" class="button">HOME</a> &nbsp; &nbsp; <a href="jsefinal.html" class="button">JSE-FINAL</a>
 <div class="clear"></div>
 <div class="entry">
-    <h3>JavaScript Essentials 1 &#8211; JSE1: Module 5 Test Answers</h3>
-    <p><strong>1. Analyze the following code:</strong></p>
-    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let show = function () {
-        console.log(test);
-    }
-    setTimeout(show, 2000);</pre>
-    <p><strong>Its execution will cause:</strong></p>
-    <ul>
-    <li class="correct_answer">the console to display <code>"test"</code> after a 2 second delay.</li>
-    <li>the console to display <code>"test"</code> after a 2000 second delay.</li>
-    <li>the console to display <code>"test"</code> 2000 times.</li>
-    <li>the console to display <code>"show"</code> after a 2 second delay.</li>
-    </ul>
-    <p><strong>2. Review the following code:</strong></p>
-    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let x = 10;
-    let y = 20;
-    
-    function test(y) {
-        console.log(y);
-    }
-    
-    test(x);</pre>
-    <p><strong>What will be displayed in the console as a result of its execution?</strong></p>
-    <ul>
-    <li><code>"y"</code></li>
-    <li><code>20</code></li>
-    <li><code class="correct_answer">10</code></li>
-    <li>Nothing, because the function expects the <code>y</code> variable to be passed and receives <code>x</code> instead.</li>
-    </ul>
-    <p><strong>3. We define a function using the following function expression:</strong></p>
-    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let sum = function (a, b) {
-        return (a + b);
-    }</pre>
-    <p><strong>What could the definition of the corresponding arrow function look like?</strong></p>
-    <ul>
-    <li>
-    <pre>let sum = function (a, b) => {
-        return (a + b);
-    }
-    ;</pre>
-    </li>
-    <li><code class="correct_answer">let sum = (a, b) => a + b;</code></li>
-    <li><code>let sum = (a, b) > a + b;</code></li>
-    <li>
-    <pre>let sum = (a, b) => {
-        a + b;
-    };</pre>
-    </li>
-    </ul>
-    <p><strong>4. If the function is to return some calculated value on completion, we use the following keyword to do so:</strong></p>
-    <ul>
-    <li><code>yield;</code></li>
-    <li><code>ret;</code></li>
-    <li><code>function;</code></li>
-    <li><code class="correct_answer">return;</code></li>
-    </ul>
-    <p><strong>5. Analyze the code below:</strong></p>
-    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">function test(counter) {
-        console.log("test");
-        if (counter > 0)
-            test(--counter);
-    }
-    
-    test(3);</pre>
-    <p><strong>How many times will the word <code>"test"</code> be displayed in the console?</strong></p>
-    <ul>
-    <li>2</li>
-    <li class="correct_answer">4</li>
-    <li>3</li>
-    <li>0</li>
-    </ul>
-    <p><strong>6. A <code>callback</code> function is a function that:</strong></p>
-    <ul>
-    <li>contains a reference to itself in its code.</li>
-    <li>is always executed at fixed intervals.</li>
-    <li>is always called with a certain pre-defined delay.</li>
-    <li class="correct_answer">is passed to another function as an argument and only called in its code.</li>
-    </ul>
-    <p><strong>7. Review the following code:</strong></p>
-    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let x = 10;
-    
-    function test(x) {
-        console.log(x);
-    }
-    
-    test(20);</pre>
-    <p><strong>What will be displayed in the console as a result of its execution?</strong></p>
-    <ul>
-    <li>Nothing will show up.</li>
-    <li><code>"x"</code></li>
-    <li><code>10</code></li>
-    <li><code class="correct_answer">20</code></li>
-    </ul>
-    <p><strong>8. We can use the <code>forEach</code> method to pass through the elements of an array. Which of the following code snippets will display all consecutive elements of the animals array in the console?</strong></p>
-    <ul>
-    <li>
-    <pre class="correct_answer">animals.forEach(a => {
-        console.log(a);
-    })</pre>
-    </li>
-    <li>
-    <pre>forEach(animals, a => {
-        console.log(a);
-    })</pre>
-    </li>
-    <li><code>animals.forEach(console.log(animal));</code></li>
-    <li><code>animals.forEach(a => a);</code></li>
-    </ul>
-    <p><strong>9. We have defined an arrow function:</strong></p>
-    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let multiply = (m, n) => m * n;</pre>
-    <p><strong>We will try to write it in a slightly modified form, but without changing what it is supposed to do. Point out the correct definition:</strong></p>
-    <ul>
-    <li>
-    <pre>let multiply = (m, n) => {
-        m * n;
-    }</pre>
-    </li>
-    <li>
-    <pre>let multiply = (m, n) => {
-        console.log(m * n);
-    }</pre>
-    </li>
-    <li>
-    <pre>let multiply = (m, n) =>
-    return (m * n);</pre>
-    </li>
-    <li>
-    <pre class="correct_answer" let multiply="(m," n)> {
-        return (m * n);
-    }</pre>
-    </li>
-    </ul>
-    <p><strong>10. The code snippet:</strong></p>
-    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">function test() {
-    }</pre>
-    <p><strong>is:</strong></p>
-    <ul>
-    <li>the declaration of the <code>test</code> variable in which the values returned by the completed function will be stored.</li>
-    <li>the call of the <code>test</code> function.</li>
-    <li>incorrect, as the code is wrong and does not mean anything.</li>
-    <li class="correct_answer">the declaration of an empty <code class="correct_answer">test</code> function.</li>
-    </ul>
-    <p><strong>11. Analyze the following code:</strong></p>
-    <pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let x = 10;
-    
-    function test() {
-        let x = 20;
-        console.log(x);
-    }</pre>
-    <p><strong>What will be displayed in the console as a result of its execution?</strong></p>
-    <ul>
-    <li><code>"x"</code></li>
-    <li><code>20</code></li>
-    <li><code>10</code></li>
-    <li class="correct_answer">Nothing will show up.</li>
-    </ul>
-    </div>
+   <h3>JavaScript Essentials 1 &#8211; JSE1: Module 6 Test Answers</h3>
+<p><strong>1. Which of the following is a syntax error?</strong></p>
+<ul>
+<li>Attempting to call a non-existent function.</li>
+<li>Attempting to modify the value of a constant.</li>
+<li>Attempting to read a value from a variable that we have not previously declared.</li>
+<li class="correct_answer">Missing parenthesis ending a condition in an <code class="correct_answer">if</code> statement.</li>
+</ul>
+<p><strong>2. Analyze the code below:</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">"let x = 10";
+console.log(x);</pre>
+<p><strong>What exception will be thrown as a result of its execution attempt?</strong></p>
+<ul>
+<li>TypeError</li>
+<li>RangeError</li>
+<li>SyntaxError</li>
+<li class="correct_answer">ReferenceError</li>
+</ul>
+<p><strong>3. Where can we find in the debugger the information about the currently called functions in our program?</strong></p>
+<ul>
+<li class="correct_answer">In the call stack window.</li>
+<li>In the <b>console</b>.</li>
+<li>We do not have access to such information.</li>
+<li>In the <b>watch</b> window.</li>
+</ul>
+<p><strong>4. Logical errors that we make while writing a program are not indicated by the interpreter. Why?</strong></p>
+<ul>
+<li>It results from the default settings of the interpreter, although we can modify these settings so that logical errors are also pointed out.</li>
+<li>The interpreter does not indicate errors while the program is running, because it detects them before the program runs (it does not allow the program to run).</li>
+<li>The interpreter ignores logical errors, because they do not affect the result of the program in any way.</li>
+<li class="correct_answer">The interpreter is unable to identify logical errors because they are not related to either the syntax or the semantics of the JavaScript language.</li>
+</ul>
+<p><strong>5. Using the debugger, we insert a breakpoint in the code at which, after running the program, we stop. In the debugger, we find a <code>Step</code> button among the step-by-step operation options. What does pressing it do?</strong></p>
+<ul>
+<li class="correct_answer">Exactly one instruction immediately after the breakpoint will be executed and the program will be paused again.</li>
+<li>The program will execute to the end or to the next breakpoint.</li>
+<li>The program will be restarted from the first instruction.</li>
+<li>The program will be executed to the end, regardless of whether there are more breakpoints in the rest of the code or not.</li>
+</ul>
+<p><strong>6. Analyze the following code:</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let x 10;
+console.log(x);</pre>
+<p><strong>What exception will be thrown as a result of its execution attempt?</strong></p>
+<ul>
+<li>RangeError</li>
+<li class="correct_answer">SyntaxError</li>
+<li>ReferenceError</li>
+<li>TypeError</li>
+</ul>
+<p><strong>7. Analyze the following code:</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">const x = 10;
+x = 20;</pre>
+<p><strong>What exception will be thrown as a result of its execution attempt?</strong></p>
+<ul>
+<li>ReferenceError</li>
+<li class="correct_answer">TypeError</li>
+<li>RangeError</li>
+<li>SyntaxError</li>
+</ul>
+<p><strong>8. We want to measure how long a certain piece of code executes. In order to do so, it is enough to:</strong></p>
+<ul>
+<li>precede the fragment with the command <code>console.time("start")</code> and end with <code>console.time("end")</code>.</li>
+<li>precede the fragment with the command <code>console.timeStart("counter")</code> and end with <code>console.timeEnd("counter")</code>.</li>
+<li>precede the fragment with the command <code>timeStart()</code> and end with <code>timeEnd()</code>.</li>
+<li class="correct_answer">aprecede the fragment with the command <code class="correct_answer">console.time("counter")</code> and end with <code class="correct_answer">console.timeEnd("counter")</code>.</li>
+</ul>
+<p><strong>9. What is the name of the place where program code execution is halted?</strong></p>
+<ul>
+<li>exitpoint</li>
+<li>pausepoint</li>
+<li class="correct_answer">breakpoint</li>
+<li>stoppoint</li>
+</ul>
+<p><strong>10. Analyze the following code:</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">try {
+    ocnsole.log("start");
+} catch (error) {
+    console.log("error");
+}
+console.log("end");</pre>
+<p><strong>What will happen as a result of its execution?</strong></p>
+<ul>
+<li>The following words will appear in the console: <code>"start"</code>, <code>"end"</code>.</li>
+<li>The console will display the words <code>"start"</code>, <code>"error"</code>, <code>"end"</code> on successive lines.</li>
+<li>The operation of the program will be interrupted and the console will display the default message <code>"Uncaught ReferenceError: ocnsole is not defined"</code>.</li>
+<li class="correct_answer">In the console, there will appear in successive lines the words <code class="correct_answer">"error"</code>, <code class="correct_answer">"end"</code>.</li>
+</ul>
+<p><strong>11. Analyze the following code:</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">try {
+    ocnsole.log("start");
+} catch (error) {
+    console.log("error");
+} finally {
+    console.log("end");
+}</pre>
+<p><strong>What will happen as a result of its execution?</strong></p>
+<ul>
+<li>The following words will appear in the console: <code>"start"</code>, <code>"end"</code>.</li>
+<li>The words <code>"start"</code>, <code>"error"</code>, <code>"end"</code> will appear in the console on successive lines.</li>
+<li>The word <code>"error"</code> will appear in the console.</li>
+<li class="correct_answer">The following words will appear in the console: <code class="correct_answer">"error"</code>, <code class="correct_answer">"end"</code>.</li>
+</ul>
+<p><strong>12. Analyze the following code:</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">const x = 10;
+onsole.log(x);
+x += 10;</pre>
+<p><strong>What exception will be thrown as a result of its execution attempt?</strong></p>
+<ul>
+<li>SyntaxError</li>
+<li>ReferenceError and TypeError</li>
+<li class="correct_answer">ReferenceError</li>
+<li>TypeError</li>
+</ul>
+<p><strong>13. Analyze the following code:</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">try {
+    console.log("start");
+} catch (error) {
+    console.log("error");
+} finally {
+    console.log("end");
+}</pre>
+<p><strong>What will happen as a result of its execution?</strong></p>
+<ul>
+<li class="correct_answer">The following words will appear in the console: <code class="correct_answer">"start"</code>, <code class="correct_answer">"end"</code>.</li>
+<li>The following words will appear in the console: <code>"error"</code>, <code>"end"</code>.</li>
+<li>The words <code>"start"</code>, <code>"error"</code>, &#8220;end&#8221; will appear in the console on successive lines.</li>
+<li>The word <code>"error"</code> will appear in the console.</li>
+</ul>
+<p><strong>14. Analyze the following code:</strong></p>
+<pre class="EnlighterJSRAW" data-enlighter-language="python" data-enlighter-linenumbers="false">let x = 10;
+ocnsole.log(x);</pre>
+<p><strong>What exception will be thrown as a result of its execution attempt?</strong></p>
+<ul>
+<li>RangeError</li>
+<li>TypeError</li>
+<li class="correct_answer">ReferenceError</li>
+<li>SyntaxError</li>
+</ul>
+</div>
 
 <a href="jse5.html" class="next">&laquo; Prev</a> &nbsp; <a href="jsefinal.html" class="next">Next &raquo;</a>
 
